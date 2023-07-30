@@ -1,0 +1,106 @@
+@media screen and (max-width: 991px) {
+    .header-transparent {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block !important;
+    }
+
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 75px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mobile-menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        overflow: hidden;
+    }
+
+    #mobile-menu-toggle:checked~.menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+    .newsletter-section-title h2{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .section-title h2{
+        font-size: 30px;
+    }
+    .section-title p {
+        width: 400px;
+        height: 90px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .section-title span b {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .accea-text h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .software-feature-title h1 {
+        font-size: 35px;
+        line-height: 25px;
+    }
+    .slide-button.slick-arrow i{
+        top: 92%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .price-box:hover{
+        transform: none;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .slider-img img{
+        min-width: 50%;
+        height: 300px;
+        margin: auto;
+        display: flex;
+    }
+    .slider-text h2 span{
+        font-size: 35px;
+    }
+    .newsletter .field{
+        margin: 0;
+    }
+}
